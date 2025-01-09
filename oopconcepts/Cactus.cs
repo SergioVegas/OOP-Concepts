@@ -10,8 +10,7 @@ public class Cactus : Plant, Spiky
 	public  Cactus( int spikes, int petals) : base (colour, surface, height)
 	{
 		this.spikes = spikes;
-		this.petals = petals;
-		
+		this.petals = petals;	
 	}
     public override bool MakeChlorophyll( string surface )
 	{

@@ -2,9 +2,9 @@
 
 public class Plant : LivingBeing
 {
-    public string? colour;
-    public string? surface;
-    public double height;
+    private string? colour;
+    private string? surface;
+    private double height;
 
 	//Setters
 	public  virtual void SetColour(string colour) {  this.colour = colour; }
@@ -23,6 +23,11 @@ public class Plant : LivingBeing
 		this.SetSurface(surface);
 		this.SetHeight(height);
 	}
+    public Plant(string colour)
+    {
+        this.SetColour(colour);
+    }
+
     //Others Methods
     public virtual bool MakeChlorophyll (string surface)
 	{
