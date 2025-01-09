@@ -1,9 +1,12 @@
 ﻿using System;
 
-public class LivingBeing
+public abstract class LivingBeing
 {
+	protected string? environment {  get; set; }
 
-	public LivingBeing()
-	{
-	}
+	public abstract void InteractWith();
+
+	public abstract void Reproduction();
+
+	public abstract void Nudrish();
 }

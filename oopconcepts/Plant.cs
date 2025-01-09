@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Plant
+public class Plant : LivingBeing
 {
     private string colour;
     private string surface;
@@ -30,4 +30,16 @@ public class Plant
 		return surface == "Wet" ? true : false ;
     }
 
+    public override void InteractWith()
+    {
+        Console.WriteLine("The environment");
+    }
+    public override void Nudrish()
+    {
+        Console.WriteLine("Feeding from the sun and soil");
+    }
+    public override void Reproduction()
+    {
+        Console.WriteLine("Yes");
+    }
 }
