@@ -1,8 +1,14 @@
 ﻿using System;
 
-public class Spiky
+public interface Spiky
 {
-	public Spiky()
+	public int DropSpikes()
 	{
+
+		return int.Parse(Console.ReadLine());
+	}
+	public void DammageSurface()
+	{
+		Console.WriteLine("The surface was dammaged");
 	}
 }

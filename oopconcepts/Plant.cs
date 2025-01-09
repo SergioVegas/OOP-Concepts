@@ -2,9 +2,9 @@
 
 public class Plant : LivingBeing
 {
-    private string colour;
-    private string surface;
-    private double height;
+    public string? colour;
+    public string? surface;
+    public double height;
 
 	//Setters
 	public  virtual void SetColour(string colour) {  this.colour = colour; }
@@ -29,7 +29,7 @@ public class Plant : LivingBeing
 
 		return surface == "Wet" ? true : false ;
     }
-
+    //Abstract Class
     public override void InteractWith()
     {
         Console.WriteLine("The environment");
@@ -42,4 +42,5 @@ public class Plant : LivingBeing
     {
         Console.WriteLine("Yes");
     }
+
 }
